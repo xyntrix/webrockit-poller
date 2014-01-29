@@ -51,7 +51,7 @@ unless File.executable?(options[:phantomas_bin])
 end
 if !options[:ip_address].to_s.empty?
    cmd = Array.new
-   cmd << "/usr/local/bin/ghost modify "+options[:domain]+" "+options[:ip_address]
+   cmd << "sudo /usr/local/bin/ghost modify "+options[:domain]+" "+options[:ip_address]
    cmd << "2> /dev/null"
    warn "Ghost cmd is: " + cmd.join(" ") if options[:debug]
    @pipe = IO.popen(cmd.join(" "))

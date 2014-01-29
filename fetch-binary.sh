@@ -2,6 +2,9 @@
 
 ### this will fetch phantomjs binary package
 
+# We don't need to be here
+exit 0
+
 # app version
 BINVER=1.9.2
 # operating system

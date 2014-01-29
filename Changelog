@@ -1,3 +1,6 @@
-2014.01.08, Version 0.0.2 (Stable), 
+2014.01.28, Version 0.0.3 (Stable),
+* webrockit-poller: Pre-pend ghost call with sudo
+* webrockit-poller: Add sudoers file for sensu default user, /etc/sudoers.d/sensu
 
+2014.01.08, Version 0.0.2 (Stable), 
 * webrockit-poller: Initial Release

@@ -2,6 +2,10 @@
 
 This package builds the webrockit-poller staging the base path to /opt/phantomjs/collectoids/webrockit-poller.  The package webrockit-poller must exist on a webrockit poller client (Sensu client).
 
+### Requirements
+
+The gem "ghost" must be installed to handle DNS overrides when specifying a specific IP address.
+
 ### To build
 
    - run ./buildme.sh

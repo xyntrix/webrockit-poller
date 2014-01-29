@@ -6,6 +6,9 @@
 PROBLEMS=0
 OLDPWD=`pwd`
 
+mkdir ./etc/sudoers.d
+mv ./opt/phantomjs/collectoids/webrockit-poller/sensu.sudoers ./etc/sudoers.d/sensu
+chmod 440 ../etc/sudoers.d/sensu
 if [ $? -ne 0 ]
 then
     PROBLEMS=99
