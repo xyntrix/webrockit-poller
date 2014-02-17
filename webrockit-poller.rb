@@ -188,6 +188,9 @@ metrics = ['requests',
 'medianResponse']
 metrics.each { |metric| 
    metricvalue = hash['metrics'][metric]
+   if metricvalue.to_s.empty?
+      metricvalue = 0
+   end
    puts metric.downcase + "\t#{metricvalue}\t#{nowstamp}\n"
 }
 
